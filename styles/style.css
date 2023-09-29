@@ -1,0 +1,260 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+}
+/* common or utilities style */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------------
+header section style here 
+-------------------------------- */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding:80px 120px;
+}
+
+.nav-title{
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu ul li{
+    list-style: none;
+    margin-right: 34px;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    width:1110px;
+    margin:0 auto;
+}
+
+.banner .banner-title{
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight:700;
+}
+
+.banner .banner-description{
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top:16px;
+    margin-bottom:16px;
+}
+.primary-btn{
+    padding:10px 24px;
+    color:#fff;
+    font-size: 16px;
+    font-weight:700;
+    background: #E02C6D;
+    border:0;
+    border-radius: 41px;
+}
+
+/*---------------------------------
+ main section style here
+------------------------------- */
+
+.ecommerce-site{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width:1000px;
+    margin: 0 auto;
+}
+.ecommerce-site a{
+    margin-left: 30px;
+}
+
+.products{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.product-title{
+    text-align: center;
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 47px;
+}
+.products-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.product{
+    border:1px solid lightgrey;
+    border-radius: 10px;
+}
+.product img{
+    /* width: 300px;
+    height: 256px; */
+    border-radius:5px;
+    margin:15px;
+}
+
+.product-info{
+    margin:0 119px 15px 15px;
+}
+
+.product-name{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom:6px;
+}
+.product-price{
+    font-size: 24px;
+    margin-bottom:8px;
+}
+.ratings{
+    display: flex;
+    margin-bottom: 5px;
+}
+.ratings .filled{
+    color: #FB8200;
+}
+.ratings p{
+    margin-left: 10px;
+}
+.product-description{
+    color:#787885;
+    font-size: 14px;
+    font-weight: 700;
+}
+.product-more{
+    text-align: end;
+    color: rgba(224, 44, 109, 0.87);
+    font-size:16px;
+    font-weight: 700;
+    margin-top:50px;
+}
+.feature-product{
+    width: 1110px;
+    display:flex;
+    align-items: center;
+    margin:0 auto;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.feature-product-info{
+    margin-left: 96px;
+}
+
+.feature-title{
+    font-size:38px;
+    font-weight: 700;
+}
+
+.feature-description{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+/* footer section style here */
+.footer{
+    text-align: center;
+    background-color: #0A0826;
+    color:#FFF;
+}
+
+.footer-title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top:50px;
+    margin-bottom: 3px;
+}
+.footer-description{
+    color:  #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom:17px;
+}
+
+.social-media{
+    padding-bottom: 50px;
+}
+.social-media .filled{
+    margin-left: 16px;
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (max-width:668px){
+    .banner{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding:20px;
+    }
+    .primary-btn{
+        margin:0 83px 53px 83px;
+    }
+    .ecommerce-site{
+        width:100%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .products{
+        width:100%;
+    }
+    .products-item{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-product{
+        width:100%;
+        flex-direction: column-reverse;
+    }
+    .feature-product-info{
+        margin-left: 30px;
+
+    }
+}
+
+@media screen and (min-width:689px) and (max-width:992px){
+    .banner{
+        width:100%;
+        flex-direction: column;
+    }
+    .ecommerce-site{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .products-item{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product{
+       
+    }
+    .feature-product{
+        width: 100%;
+    }
+    .hide{
+        display: none;
+    }
+}
